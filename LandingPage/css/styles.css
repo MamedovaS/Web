@@ -1,0 +1,13 @@
+@import "./normalize.min.css";
+
+@import "./globals.css";
+
+@import "./header.css";
+
+@import "./container1.css";
+
+@import "./container2.css";
+
+@import "./container3.css";
+
+@import "./footer.css";

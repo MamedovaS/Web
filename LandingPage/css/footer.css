@@ -1,0 +1,50 @@
+.footer {
+    margin-top: 50px;
+
+    width: 1446px;
+    height: 282px;
+
+    background: #E7ECFF;
+}
+
+.footer__text {
+    margin: auto;
+    width: 1110px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.IoT {
+    display: flex;
+    margin: 0 auto;
+
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    padding-left: 24px;
+    padding-top: 4px;
+
+    width: 109px;
+    height: 26px;
+
+    border: 0;
+    background: #111B47;
+}
+
+.rectangle {
+    display: flex;
+    margin: auto;
+}
+
+.footer ul {
+    display: flex;
+    padding-left: 605px;
+}
+
+.footer__icons {
+    display: flex;
+    margin: auto;
+}
