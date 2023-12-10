@@ -3,7 +3,7 @@ const locationInput = document.getElementById("location__input");
 const areaInput = document.getElementById("area__input");
 const capacityInput = document.getElementById("capacity__input");
 const submitButton = document.getElementById("submit__button");
-const zooForm = document.getElementById("zooform");
+const stadiumForm = document.getElementById("stadiumform");
 
 function checkForArea(areaValue) {
   return areaValue !== 0;

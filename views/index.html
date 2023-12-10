@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Stadiums</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="/style/styles.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
         <form class="sidebar" id="stadiumform">
             <h5 id="create__title">Create stadium</h5>
             <div class="create__input">
-                <label for="title__input" class="label__form">Name</label>
+                <label for="title__input" class="label__form">Name</label> 
                 <input type="text" id="title__input" class="input__form" name="title" required>
             </div>
             <div class="create__input">
@@ -38,6 +38,11 @@
                 <label for="capacity__input" class="label__form">Capacity</label>
                 <input type="number" id="capacity__input" class="input__form" name="capacity" required>
             </div>
+        </div>
+        <div class="create__input">
+            <label for="capacity__input" class="label__form">area</label>
+            <input type="number" id="area__input" class="input__form" name="capacity" required>
+        </div>
             <button id="submit__button" type="submit" class="submit__button" onclick="saveStadium()">Submit</button>
 
             <div class="edit hide">
@@ -53,6 +58,10 @@
                 <div class="create__input">
                     <label for="capacity__input__edit" class="edit__form">New capacity</label>
                     <input type="number" id="capacity__input__edit" class="input__form">
+                </div>
+                <div class="create__input">
+                    <label for="capacity__input" class="label__form">New area</label>
+                    <input type="number" id="area__input__edit" class="input__form" name="capacity" required>
                 </div>
                 <button id="submit__edit__button" type="submit" class="submit__button" onclick="saveEdit()">Submit</button>
                 <button id="cancel__button" type="submit" class="submit__button" onclick="cancelEdit()">Cancel</button>

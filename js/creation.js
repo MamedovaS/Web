@@ -6,9 +6,7 @@ const saveStadium = () => {
   const stadiumList = document.getElementById("stadiumlist");
   const titleInput = document.getElementById("title__input").value;
   const locationInput = document.getElementById("location__input").value;
-  const areaInput = parseFloat(
-    document.getElementById("area__input").value
-  );
+  const areaInput = parseFloat(document.getElementById("area__input").value);
   const capacityInput = document.getElementById("capacity__input").value;
 
   if (areaInput <= 0 || locationInput ==='' || titleInput === '' || capacityInput === '' || capacityInput === '0') {
@@ -27,7 +25,7 @@ const saveStadium = () => {
   stadiumItem.classList.add("stadium-item");
   stadiumItem.innerHTML = `
       <div class="card__body">
-        <img src="./stadium.jpeg" >
+        <img src="/res/stadium.jpg" >
         <h1 class="card__title">${stadium.title}</h1>
         <h2 class="card__stadium__location">stadium location: ${stadium.location}</h2>
         <h2 class="card__stadium__area">stadium area: ${stadium.area}</h2>
@@ -55,7 +53,7 @@ function display(stadiums) {
     stadiumItem.classList.add("stadium-item");
     stadiumItem.innerHTML = `
     <div class="card__body">
-      <img src="./stadium.jpeg" >
+      <img src="/res/stadium.jpg" >
       <h1 class="card__title">${item.title}</h1>
       <h2 class="card__stadium__location">stadium location: ${item.location}</h2>
       <h2 class="card__stadium__area">stadium area: ${item.area}</h2>

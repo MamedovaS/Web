@@ -7,8 +7,8 @@
 
 #container {
   display: grid;
-  grid-template-columns: 300px 1fr; /* Sidebar takes 300px, the rest is for zoolist */
-  gap: 20px; /* Add spacing between sidebar and zoolist */
+  grid-template-columns: 300px 1fr; /* Sidebar takes 300px, the rest is for stadiumlist */
+  gap: 20px; /* Add spacing between sidebar and stadiumlist */
 }
 
 body {
@@ -92,7 +92,7 @@ li {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-#zooform h5 {
+#stadiumform h5 {
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -139,7 +139,7 @@ li {
   margin-right: 10px;
 }
 
-#zoolist {
+#stadiumlist {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -180,9 +180,9 @@ li {
   margin-bottom: 10px;
 }
 
-.card__zoo__location,
-.card__zoo__area,
-.card__zoo__capacity {
+.card__stadium__location,
+.card__stadium__area,
+.card__stadium__capacity {
   font-size: 16px;
   margin-bottom: 5px;
 }
