@@ -1,6 +1,14 @@
 const stadiums = [];
 let showedlist = stadiums;
 
+const displayAllStadiums = async () =>{
+  const allStadiums = await getAllStadiums();
+  stadiums = allStadiums;
+  showedlist = stadiums;
+  display(stadiums);
+  TotalByArea(showedlist);
+}
+
 
 const saveStadium = () => {
   const stadiumList = document.getElementById("stadiumlist");
@@ -8,11 +16,24 @@ const saveStadium = () => {
   const locationInput = document.getElementById("location__input").value;
   const areaInput = parseFloat(document.getElementById("area__input").value);
   const capacityInput = document.getElementById("capacity__input").value;
+  
+  if (!String.isString(String(titleInput))) {
+    alert("Please enter a valid integer for the title.");
+    return;}
+  
+  if (!Number.isInteger(Number(capacityInput))) {
+    alert("Please enter a valid integer for the capacity.");
+    return;}
+
+  if (!Number.isInteger(Number(areaInput))) {
+    alert("Please enter a valid integer for the area.");
+    return;} 
 
   if (areaInput <= 0 || locationInput ==='' || titleInput === '' || capacityInput === '' || capacityInput === '0') {
     alert("Please fill in all fields and ensure the area is not 0.");
-    return; // Exit the function if area is 0
+    return; 
   }
+  
 
   const stadium = {
     title: titleInput,
