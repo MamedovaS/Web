@@ -39,7 +39,7 @@ li {
 
 .nav__button {
   padding: 10px 15px;
-  background-color: #ff6f61;
+  background-color: #6569e7;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
@@ -47,7 +47,7 @@ li {
 }
 
 .nav__button:hover {
-  background-color: #ff4136;
+  background-color: #6569e7;
 }
 
 #find {
@@ -74,7 +74,7 @@ li {
 }
 
 #find button:hover {
-  background-color: #ff4136;
+  background-color: #6569e7;
 }
 
 .container {
@@ -117,7 +117,7 @@ li {
 
 .submit__button {
   padding: 10px 20px;
-  background-color: #ff6f61;
+  background-color: #6569e7;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -126,7 +126,7 @@ li {
 }
 
 .submit__button:hover {
-  background-color: #ff4136;
+  background-color: #6569e7;
 }
 
 
@@ -192,7 +192,7 @@ li {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 10px;
-  background-color: #ff6f61;
+  background-color: #6569e7;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -202,7 +202,7 @@ li {
 
 .delete__button:hover,
 .edit__button:hover {
-  background-color: #ff4136;
+  background-color: #6569e7;
 }
 
 .edit {
