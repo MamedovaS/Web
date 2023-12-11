@@ -10,57 +10,57 @@ const editStadium = (element) => {
   const locationElement = currentElement
     .querySelector(".card__stadium__location")
     .textContent.split(": ");
-  const areaElement = currentElement
-    .querySelector(".card__stadium__area")
+  const sportElement = currentElement
+    .querySelector(".card__stadium__sport")
     .textContent.split(": ");
   const capacityElement = currentElement
     .querySelector(".card__stadium__capacity")
     .textContent.split(": ");
   document.getElementById("title__input__edit").value = `${titleElement}`;
   document.getElementById("location__input__edit").value = `${locationElement[1]}`;
-  document.getElementById("area__input__edit").value = `${areaElement[1]}`;
+  document.getElementById("sport__input__edit").value = `${sportElement[1]}`;
   document.getElementById("capacity__input__edit").value = `${capacityElement[1]}`;
 };
 
 const saveEdit = () => {
   const titleUpdated = document.getElementById("title__input__edit").value;
   const locationUpdated = document.getElementById("location__input__edit").value;
-  const areaUpdated = document.getElementById("area__input__edit").value;
+  const sportUpdated = document.getElementById("sport__input__edit").value;
   const capacityUpdated = document.getElementById("capacity__input__edit").value;
 
   const titleElement = currentElement.querySelector(".card__title");
   const locationElement = currentElement.querySelector(".card__stadium__location");
-  const areaElement = currentElement.querySelector(".card__stadium__area");
+  const sportElement = currentElement.querySelector(".card__stadium__sport");
   const capacityElement = currentElement.querySelector(".card__stadium__capacity");
 
   const title = titleElement.textContent;
   const location = locationElement.textContent.split(": ");
-  const area = areaElement.textContent.split(": ");
+  const sport = sportElement.textContent.split(": ");
 
-  if (areaUpdated <= 0 || locationUpdated==='' || titleUpdated === '' || capacityUpdated === '' || capacityUpdated === '0') {
-    alert("Please fill in all fields and ensure the area is not 0.");
-    return; // Exit the function if area is 0
+  if (sportUpdated <= 0 || locationUpdated==='' || titleUpdated === '' || capacityUpdated === '' || capacityUpdated === '0') {
+    alert("Please fill in all fields and ensure the sport is not 0.");
+    return; // Exit the function if sport is 0
   }
 
   titleElement.textContent = titleUpdated;
   locationElement.textContent = "stadium location: " + locationUpdated;
-  areaElement.textContent = "stadium area: " + areaUpdated;
+  sportElement.textContent = "stadium sport: " + sportUpdated;
   capacityElement.textContent = "stadium capacity: " + capacityUpdated;
 
   for (let i = 0; i < stadiums.length; i++) {
     if (
       stadiums[i].title === title &&
       stadiums[i].location === location[1] &&
-      stadiums[i].area === parseFloat(area[1])
+      stadiums[i].sport === parseFloat(sport[1])
     ) {
       stadiums[i].title = titleUpdated;
       stadiums[i].location = locationUpdated;
-      stadiums[i].area = parseFloat(areaUpdated);
+      stadiums[i].sport = parseFloat(sportUpdated);
       stadiums[i].capacity = capacityUpdated;
     }
   }
   edit.classList.add(HIDE_CLASSNAME);
-  TotalByArea(stadiums);
+  TotalBysport(stadiums);
 };
 const cancelEdit = () => {
     edit.classList.add(HIDE_CLASSNAME);

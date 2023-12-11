@@ -1,12 +1,12 @@
 const titleInput = document.getElementById("title__input");
 const locationInput = document.getElementById("location__input");
-const areaInput = document.getElementById("area__input");
+const sportInput = document.getElementById("sport__input");
 const capacityInput = document.getElementById("capacity__input");
 const submitButton = document.getElementById("submit__button");
 const stadiumForm = document.getElementById("stadiumform");
 
-function checkForArea(areaValue) {
-  return areaValue !== 0;
+function checkForsport(sportValue) {
+  return sportValue !== 0;
 }
 
 const editButton = document.getElementById("submit__edit__button");
@@ -21,9 +21,9 @@ submitButton.addEventListener("click", function(event){
 function checkFields() {
   const titleValue = titleInput.value.trim();
   const locationValue = locationInput.value.trim();
-  const areaValue = parseInt(areaInput.value.trim()); 
+  const sportValue = parseInt(sportInput.value.trim()); 
   const capacityValue = capacityInput.value.trim();
-  return titleValue && locationValue && checkForArea(areaValue) && capacityValue;
+  return titleValue && locationValue && checkForsport(sportValue) && capacityValue;
 }
 
 

@@ -39,7 +39,7 @@ li {
 
 .nav__button {
   padding: 10px 15px;
-  background-color: #ff6f61;
+  background-color: #4e69cb;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
@@ -47,7 +47,7 @@ li {
 }
 
 .nav__button:hover {
-  background-color: #ff4136;
+  background-color: #4e69cb;
 }
 
 #find {
@@ -65,7 +65,7 @@ li {
 
 #find button {
   padding: 10px 15px;
-  background-color: #ff6f61;
+  background-color: #4e69cb;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -74,7 +74,7 @@ li {
 }
 
 #find button:hover {
-  background-color: #ff4136;
+  background-color: #3570c9;
 }
 
 .container {
@@ -107,8 +107,7 @@ li {
   margin-bottom: 5px;
 }
 
-.create__input input[type="text"],
-.create__input input[type="number"] {
+.create__input input[type="text"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -117,7 +116,7 @@ li {
 
 .submit__button {
   padding: 10px 20px;
-  background-color: #ff6f61;
+  background-color: #6497e9;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -126,7 +125,7 @@ li {
 }
 
 .submit__button:hover {
-  background-color: #ff4136;
+  background-color: #34cfdd;
 }
 
 
@@ -192,7 +191,7 @@ li {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 10px;
-  background-color: #ff6f61;
+  background-color: #e3b2f0;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -202,7 +201,7 @@ li {
 
 .delete__button:hover,
 .edit__button:hover {
-  background-color: #ff4136;
+  background-color: #e8a8f2;
 }
 
 .edit {

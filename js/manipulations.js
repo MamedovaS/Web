@@ -1,7 +1,7 @@
 function SortStadium(list) {
   const stadiumsList = document.getElementById("stadiumlist");
   stadiumsList.innerHTML = "";
-  list.sort((a, b) => a.area - b.area);
+  list.sort((a, b) => a.sport - b.sport);
   list.forEach((stadium) => {
     const stadiumItem = document.createElement("div");
     stadiumItem.classList.add("stadium-item");
@@ -10,7 +10,7 @@ function SortStadium(list) {
         <img src="./stadium.jpeg">
         <h1 class="card__title">${stadium.title}</h1>
         <h2 class="card__stadium__location">stadium location: ${stadium.location}</h2>
-        <h2 class="card__stadium__area">stadium area: ${stadium.area}</h2>
+        <h2 class="card__stadium__sport">stadium sport: ${stadium.sport}</h2>
         <h2 class="card__stadium__capacity">stadium capacity: ${stadium.capacity}</h2>
         <button type="button" class="edit__button" onclick="editstadium(this.parentElement)">Edit</button>
       </div>
@@ -18,16 +18,16 @@ function SortStadium(list) {
 
     stadiumsList.appendChild(stadiumItem);
   });
-  TotalByArea(list);
+  TotalBysport(list);
   console.log(showedlist);
   console.log(list);
 }
 
-function TotalByArea(stadium) {
-  const totalArea = stadium.reduce((totalArea, stadium) => totalArea + stadium.area, 0);
-  console.log(totalArea);
-  const totalAreaElement = document.getElementById("total__area");
-  totalAreaElement.textContent = `Total Area: ${totalArea}`;
+function TotalBysport(stadium) {
+  const totalsport = stadium.reduce((totalsport, stadium) => totalsport + stadium.sport, 0);
+  console.log(totalsport);
+  const totalsportElement = document.getElementById("total__sport");
+  totalsportElement.textContent = `Total sport: ${totalsport}`;
 }
 
 
@@ -41,11 +41,11 @@ function SearchStadiums() {
   showedlist = result;
   display(showedlist);
   console.log(showedlist);
-  TotalByArea(showedlist);
+  TotalBysport(showedlist);
 }
 
 function restore(){
   display(stadiums);
-  TotalByArea(stadiums);
+  TotalBysport(stadiums);
   showedlist = stadiums;
 }
