@@ -1,0 +1,143 @@
+@import "./normalize.min.css";
+
+@import "./header.css";
+
+@import "./container1.css";
+
+@import "./container2.css";
+
+@import "./container3.css";
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #5D6970;
+}
+
+.hero {
+    max-height: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    max-height: none;
+}
+
+a {
+    color: #505F98;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.inner {
+    margin-left: 160px;
+    margin-top: 140px;
+    line-height: 26px;
+    max-height: none;
+
+    color: #6F7CB2;
+}
+
+.inner ul {
+    margin-top: 45px;
+    display: flex;
+    padding: 0;
+}
+
+.inner__subparaghraph {
+    margin-right: 30px;
+
+    color: #5D6970;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.title-Landie {
+
+    color: #37447E;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+
+    color: #091133;
+}
+
+.title2 {
+    color: #091133;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.title3 {
+    margin-top: 90px;
+    color: #37447E;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.title4 {
+    color: #091133;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.footer {
+    margin-top: 50px;
+
+    width: 1446px;
+    height: 282px;
+
+    background: #E7ECFF;
+}
+
+.footer__text {
+    margin: auto;
+    width: 1110px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.IoT {
+    display: flex;
+    margin: 0 auto;
+
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    padding-left: 24px;
+    padding-top: 4px;
+
+    width: 109px;
+    height: 26px;
+
+    border: 0;
+    background: #111B47;
+}
+
+.rectangle {
+    display: flex;
+    margin: auto;
+}
+
+.footer ul {
+    display: flex;
+    padding-left: 605px;
+}
+
+.footer__icons {
+    display: flex;
+    margin: auto;
+}
