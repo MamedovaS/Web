@@ -8,6 +8,12 @@
 
 @import "./container3.css";
 
+@import "./animation_for_small_screeen.css";
+
+@import "./burger.css";
+
+
+
 body {
     font-family: "Roboto", "Arial", sans-serif;
     color: #5D6970;
