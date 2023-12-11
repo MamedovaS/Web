@@ -9,10 +9,6 @@ function checkForsport(sportValue) {
   return sportValue !== 0;
 }
 
-const editButton = document.getElementById("submit__edit__button");
-editButton.addEventListener("click", function(event){
-  event.preventDefault();
-});
 
 submitButton.addEventListener("click", function(event){
   event.preventDefault();
