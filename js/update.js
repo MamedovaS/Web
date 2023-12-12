@@ -6,9 +6,10 @@ let currentElement;
 const editStadium = (element) => {
   edit.classList.remove(HIDE_CLASSNAME);
   currentElement = element;
+  
   const titleElement = currentElement.querySelector(".card__title").textContent;
-  const locationElement = currentElement
-    .querySelector(".card__stadium__location")
+ 
+  const locationElement = currentElement.querySelector(".card__stadium__location")
     .textContent.split(": ");
   const bought_tiketElement = currentElement
     .querySelector(".card__stadium__bought_tiket")
