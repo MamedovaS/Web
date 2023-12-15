@@ -2,17 +2,10 @@ import CatalogSearch from "../../components/catalogSearch/catalogSearch";
 import "../../components/catalogSearch/catalogSearch.css";
 import StadiumItems from "../../components/stadiumItems/stadiumItems";
 
-import "../../components/stadiumItems/defaultZoo.css"
-import "../../components/stadiumItems/zooItems.css";
+import "../../components/stadiumItems/defaultStadium.css"
+import "../../components/stadiumItems/stadiumItems.css";
 
-pen
-import Stadium from "./StadiumPhoto/stadium.jpg";
-import Stadium from "./StadiumPhoto/stadium.jpg";
-import Stadium from "./StadiumPhoto/stadium.jpg";
-import Stadium from "./StadiumPhoto/stadium.jpg";
-import Stadium from "./StadiumPhoto/stadium.jpg";
-import Stadium from "./StadiumPhoto/stadium.jpg";
-import Stadium from "./StadiumPhoto/stadium.jpg";
+import Stadium from "./stadium.jpg";
 
 const zoodata = [
   {

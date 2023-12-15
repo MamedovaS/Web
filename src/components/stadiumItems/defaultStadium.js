@@ -1,5 +1,5 @@
 import React from "react";
-import defaultStadiumImage from "./pages/catalog/StadiumPhoto/stadium.jpg";
+import defaultStadiumImage from "./ls.png";
 import { NavLink } from "react-router-dom";
 
 const DefaultStadium = ({
