@@ -12,7 +12,24 @@
 
 @import "./burger.css";
 
+.social_buttons {
+    text-align: center;
+    margin-right: 20px
+  }
 
+  .social_buttons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .social_buttons li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
+
+ 
 
 body {
     font-family: "Roboto", "Arial", sans-serif;
@@ -23,11 +40,22 @@ body {
     max-height: none;
 }
 
+.footer__icons {
+    display: flex;
+    margin: 50 auto;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1440px;
     max-height: none;
 }
+.header__learn-more a {
+    color: white;
+  }
+.purchase a {
+    color: white;
+  }
 
 a {
     color: #505F98;
@@ -100,7 +128,7 @@ ul {
 .footer {
     margin-top: 50px;
 
-    width: 1446px;
+    width: 1519px;
     height: 282px;
 
     background: #E7ECFF;
