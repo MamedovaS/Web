@@ -1,6 +1,6 @@
 const titleInput = document.getElementById("title__input");
 const locationInput = document.getElementById("location__input");
-const bought_tiketInput = document.getElementById("bought_tiket__input");
+const bought_ticketInput = document.getElementById("bought_ticket__input");
 const capacityInput = document.getElementById("capacity__input");
 const submitButton = document.getElementById("submit__button");
 const stadiumForm = document.getElementById("stadiumform");
@@ -14,9 +14,6 @@ editButton.addEventListener("click", function(event){
   event.preventDefault();
 });
 
-stadiumFormForm.addEventListener("submit", function (event){
-  event.preventDefault();
-});
 
 submitButton.addEventListener("click", function(event){
   event.preventDefault();
@@ -25,7 +22,7 @@ submitButton.addEventListener("click", function(event){
 function checkFields() {
   const titleValue = titleInput.value.trim();
   const locationValue = locationInput.value.trim();
-  const bought_tiketValue = parseInt(bought_tiketInput.value.trim()); 
+  const bought_tiketValue = parseInt(bought_ticketInput.value.trim()); 
   const capacityValue = capacityInput.value.trim();
   return titleValue && locationValue && checkForbought_tiket(bought_tiketValue) && capacityValue;
 }
