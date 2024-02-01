@@ -1,11 +1,11 @@
-const db = require("../db");
+const db = require("../models/db");
 
 class StadiumController{stadium
     async createStadium(req, res) {
-        const {name, location, area, capacity} = req.body;
+        const {name, location, tickets, capacity} = req.body;
         const newStadium = await db.query(
-            `INSERT INTO stadium (name, location, area, capacity) VALUES
-            ($1, $2, $3, $4)`, [name, location, area, capacity]
+            `INSERT INTO stadium (name, location, tickets, capacity) VALUES
+            ($1, $2, $3, $4)`, [name, location, tickets, capacity]
 
         );
         const responce = await db.query(`SELECT * FROM stadium`);
@@ -26,15 +26,15 @@ class StadiumController{stadium
     }
     async getSortedStadium(req, res){
         const sortedStadiums = await db.query(
-            `SELECT * FROM stadium ORDER BY area `
+            `SELECT * FROM stadium ORDER BY tickets `
         );
         res.json(sortedStadiums.rows)
     }
     async updateStadium(req, res){
-        const {id,name, location, area, capacity} = req.body;
+        const {id,name, location, tickets, capacity} = req.body;
         const updateStadium = await db.query(
-            `UPDATE stadium SET name = $1, location = $2, area = $3, capacity = $4 WHERE id= $5 RETURNING *`,
-            [name, location, area, capacity, id]
+            `UPDATE stadium SET name = $1, location = $2, tickets = $3, capacity = $4 WHERE id= $5 RETURNING *`,
+            [name, location, tickets, capacity, id]
         );
         res.json(updateStadium.rows[0]);
     }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Stadiums</title>
-    <link rel="stylesheet" type="text/css" href="/style/styles.css">
+    <link rel="stylesheet" type="text/html" href="../style/styles.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             <button tabindex="0" class="nav__button" onclick="restore()">Restore</button>
         </ul>
         <form id="find">
-            <input type="text" name="query" id="find__title">
+            <input type="text/html" name="query" id="find__title">
             <button type="button" onclick="SearchStadiums()">Find</button>
         </form>
     </nav>
@@ -28,11 +28,11 @@
             <h5 id="create__title">Create stadium</h5>
             <div class="create__input">
                 <label for="title__input" class="label__form">Name</label> 
-                <input type="text" id="title__input" class="input__form" name="title" required>
+                <input type="text/html" id="title__input" class="input__form" name="title" required>
             </div>
             <div class="create__input">
                 <label for="location__input" class="label__form">Location</label>
-                <input type="text" id="location__input" class="input__form" name="location" required>
+                <input type="text/html" id="location__input" class="input__form" name="location" required>
             </div>
             <div class="create__input">
                 <label for="capacity__input" class="label__form">Capacity</label>
@@ -49,11 +49,11 @@
                 <h5 id="edit__title">Edit stadium</h5>
                 <div class="create__input">
                     <label for="title__input__edit" class="edit__form">New name</label>
-                    <input type="text" id="title__input__edit" class="input__form" placeholder=${title}>
+                    <input type="text/html" id="title__input__edit" class="input__form" placeholder=${title}>
                 </div>
                 <div class="create__input">
                     <label for="location__input__edit" class="edit__form">New location</label>
-                    <input type="text" id="location__input__edit" class="input__form">
+                    <input type="text/html" id="location__input__edit" class="input__form">
                 </div>
                 <div class="create__input">
                     <label for="capacity__input__edit" class="edit__form">New capacity</label>
@@ -72,9 +72,11 @@
             </div>
         </main>
     </div>
+    <script src="/js/api.js"></script>
     <script src="/js/creation.js"></script>
     <script src="/js/update.js"></script>
     <script src="/js/manipulations.js"></script>
+    <script src="/js/display-stadiums.js"></script>
     <script src="/js/index.js"></script>
 </body>
 

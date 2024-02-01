@@ -1,6 +1,5 @@
 
 const BASE_URL = "http://localhost:5500/api";
-const RESOURSE_URL = `${BASE_URL}/planes`;
 
 const baseRequest = async ({
     pathUrl = "/stadium",
@@ -19,6 +18,7 @@ const baseRequest = async ({
             reqParams.body = JSON.stringify(body);
         }
 
+        console.log("start fetch");
         const response = await fetch(`${BASE_URL}${pathUrl}`, reqParams);
 
         if (!response.ok) {

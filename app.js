@@ -15,8 +15,8 @@ app.use(cors({
   methods: 'POST,PUT,GET,OPTIONS',  
   allowedHeaders: ['Content-Type']  
 }));
-app.use("/css", express.static(__dirname + "public/css"));
-app.use("/js", express.static(__dirname + "public/js"));
+app.use("/css", express.static(__dirname + "../styles.css"));
+app.use("../js", express.static(__dirname + "../js"));
 app.use(express.json());
 app.use("/api", stadiumRouter);
 app.get("", (req, res) => {
