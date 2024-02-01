@@ -1,7 +1,7 @@
 function SortStadiums(list) {
   const stadiumsList = document.getElementById("stadiumlist");
   stadiumsList.innerHTML = "";
-  list.sort((a, b) => a.bought_ticket - b.bought_ticket);
+  list.sort((a, b) => a.capacity - b.capacity);
   list.forEach((stadium) => {
     const stadiumItem = document.createElement("div");
     stadiumItem.classList.add("stadium-item");

@@ -22,9 +22,9 @@ submitButton.addEventListener("click", function(event){
 function checkFields() {
   const titleValue = titleInput.value.trim();
   const locationValue = locationInput.value.trim();
-  const bought_tiketValue = parseInt(bought_ticketInput.value.trim()); 
+  const bought_ticketValue = parseInt(bought_ticketInput.value.trim()); 
   const capacityValue = capacityInput.value.trim();
-  return titleValue && locationValue && checkForbought_tiket(bought_tiketValue) && capacityValue;
+  return titleValue && locationValue && checkForbought_tiket(bought_ticketValue) && capacityValue;
 }
 
 

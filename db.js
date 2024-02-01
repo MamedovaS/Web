@@ -1,11 +1,14 @@
+const Sequelize = require("sequelize");
+const dbConfig = require("../config/db_config");
 
-const Pool = require('pg').Pool
-const pool = new Pool({
-    user: "root",
-    password: 'root',
-    host: "127.0.0.1",
-    port: 5500,
-    database: "node_postgres"
+// Create a connection to the database
+module.exports = new Sequelize(dbConfig.DATABASE, dbConfig.USER, dbConfig.PASSWORD, {
+  host: dbConfig.HOST,
+  dialect: dbConfig.dialect,
+  pool: {
+	max: dbConfig.pool.max,
+	min: dbConfig.pool.min,
+	acquire: dbConfig.acquire,
+	idle: dbConfig.idle
+  }
 });
-
-module.exports = pool;

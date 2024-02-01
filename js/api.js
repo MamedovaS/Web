@@ -1,5 +1,6 @@
 
 const BASE_URL = "http://localhost:5500/api";
+const RESOURSE_URL = `${BASE_URL}/planes`;
 
 const baseRequest = async ({
     pathUrl = "/stadium",

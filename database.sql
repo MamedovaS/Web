@@ -1,11 +1,14 @@
+CREATE TABLE `stadium` (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30) NOT NULL,
+  tickets INT UNSIGNED  NOT NULL,
+  capacity INT UNSIGNED  NOT NULL,
+  location VARCHAR(100) NOT NULL, 
+  PRIMARY KEY (id)
+);
 
-const Pool = require('pg').Pool
-const pool = new Pool({
-    user: "root",
-    password: 'root',
-    host: "127.0.0.1",
-    port: 5500,
-    database: "node_postgres"
-});
+use stadium;
 
-module.exports = pool;
+DROP TABLE stadium.stadium;
+
+SELECT * from stadium.stadium;
