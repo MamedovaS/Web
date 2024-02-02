@@ -1,4 +1,4 @@
-const db = require("../models/db");
+const db = require("../db");
 
 class StadiumController{stadium
     async createStadium(req, res) {
@@ -12,7 +12,9 @@ class StadiumController{stadium
         res.json(responce.rows)
     }
     async getAllStadium(req, res) {
+        console.log("l.1");
         const allStadiums = await db.query(`SELECT * FROM stadium`);
+        console.log("l.2");
         res.json(allStadiums.rows);
     }
 

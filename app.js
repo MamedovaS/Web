@@ -11,17 +11,17 @@ app.use((req, res, next) => {
     next();
   });
 app.use(cors({
-  origin: 'http://127.0.0.1:5500',
+  origin: 'http://localhost:3000',
   methods: 'POST,PUT,GET,OPTIONS',  
   allowedHeaders: ['Content-Type']  
 }));
-app.use("/css", express.static(__dirname + "../styles.css"));
+app.use("../style", express.static(__dirname +"../styles.css"));
 app.use("../js", express.static(__dirname + "../js"));
 app.use(express.json());
 app.use("/api", stadiumRouter);
 app.get("", (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
 });
-app.listen(5500, ()=>{
-    console.log("http://127.0.0.1:5500");
+app.listen(3000, ()=>{
+    console.log("http://localhost:3000");
 });

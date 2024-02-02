@@ -1,5 +1,5 @@
 
-const BASE_URL = "http://localhost:5500/api";
+const BASE_URL = "http://localhost:3000/api";
 
 const baseRequest = async ({
     pathUrl = "/stadium",
@@ -20,6 +20,8 @@ const baseRequest = async ({
 
         console.log("start fetch");
         const response = await fetch(`${BASE_URL}${pathUrl}`, reqParams);
+
+        //const response = await fetch(`${BASE_URL}${pathUrl}`, reqParams);
 
         if (!response.ok) {
             throw new Error(`HTTP Error: ${response.status} - ${response.statusText}`);
