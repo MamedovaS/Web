@@ -4,8 +4,8 @@ class StadiumController{stadium
     async createStadium(req, res) {
         const {name, location, tickets, capacity} = req.body;
         const newStadium = await db.query(
-            `INSERT INTO stadium (name, location, tickets, capacity) VALUES
-            ($1, $2, $3, $4)`, [name, location, tickets, capacity]
+            `INSERT INTO stadium (name, tickets, capacity, location) VALUES
+            ($1, $2, $3, $4)`, [name, tickets, capacity, location]
 
         );
         const responce = await db.query(`SELECT * FROM stadium`);

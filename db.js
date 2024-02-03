@@ -3,7 +3,7 @@ const pool = new Pool({
     user: "root",
     password: 'root',
     host: "localhost",
-    port: 5432,
+    port:3306,
     database: "node_postgres"
 });
 
