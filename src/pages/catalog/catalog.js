@@ -5,7 +5,7 @@ import StadiumItems from "../../components/stadiumItems/stadiumItems";
 import "../../components/stadiumItems/defaultStadium.css"
 import "../../components/stadiumItems/stadiumItems.css";
 
-import Stadium from "../stadium.jpg";
+import Stadium from "../catalog/stadium.jpg";
 
 
 const Stadiodata = [
